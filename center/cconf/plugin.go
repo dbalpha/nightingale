@@ -61,4 +61,10 @@ var Plugins = []Plugin{
 		Type:     "victorialogs",
 		TypeName: "VictoriaLogs",
 	},
+	{
+		Id:       11,
+		Category: "logging",
+		Type:     "tencent-cls",
+		TypeName: "Tencent CLS",
+	},
 }

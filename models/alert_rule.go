@@ -35,6 +35,7 @@ const (
 
 	CLICKHOUSE   = "ck"
 	VICTORIALOGS = "victorialogs"
+	TENCENTCLS   = "tencent-cls"
 )
 
 const (
@@ -1251,7 +1252,8 @@ func (ar *AlertRule) IsInnerRule() bool {
 		ar.Cate == POSTGRESQL ||
 		ar.Cate == DORIS ||
 		ar.Cate == OPENSEARCH ||
-		ar.Cate == VICTORIALOGS
+		ar.Cate == VICTORIALOGS ||
+		ar.Cate == TENCENTCLS
 }
 
 func (ar *AlertRule) GetRuleType() string {
